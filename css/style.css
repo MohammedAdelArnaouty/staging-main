@@ -420,10 +420,12 @@ ol {
 	margin-bottom: 10px;
 }
 
-.header__widget h4 {
-	font-size: 22px;
-	color: #dfa667;
-}
+	.header__widget h4 {
+		font-size: 22px;
+		background: -webkit-linear-gradient(#eee, #333);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 
 .offcanvas-menu-wrapper {
 	display: none;
