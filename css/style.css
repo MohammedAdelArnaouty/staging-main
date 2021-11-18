@@ -30,12 +30,19 @@
 
 /* Template default CSS
 /*----------------------------------------*/
-
+@font-face {
+	font-family: skia;
+	src: url('../fonts/SkiaRegular.woff');
+}
 html,
 body {
 	height: 100%;
-	font-family: "Poppins", sans-serif;
+	font-family: skia;
 	-webkit-font-smoothing: antialiased;
+
+}
+
+}
 }
 
 h1,
@@ -47,7 +54,7 @@ h6 {
 	margin: 0;
 	color: #111111;
 	font-weight: 400;
-	font-family: "Aldrich", sans-serif;
+	font-family: skia;
 }
 
 h1 {
@@ -138,8 +145,8 @@ ol {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
-	background-blend-mode: color;
-	background-color: #262626cc;
+	background-blend-mode: darken;
+	background-color: #111111cc;
 }
 
 .spad {
@@ -227,14 +234,19 @@ ol {
 
 .site-btn {
 	font-size: 16px;
-	background: linear-gradient( -90deg,#72cddd8a, #ee6faa8c,#262626);
-	-webkit-background-clip: border-box;
-	color: #ffffff;
 	font-weight: 600;
-	border: none;
 	display: inline-block;
 	padding: 14px 36px;
+	border: 2px solid #26262626;
+	color: #262626;
+	border-radius: 4px;
+	cursor: pointer;
 }
+
+	.site-btn:hover {
+		background-color: #262626;
+		color: white;
+	}
 
 /* Preloder */
 
@@ -325,6 +337,7 @@ ol {
 
 .header__menu {
 	text-align: center;
+	margin-top: 13px;
 }
 
 .header__menu ul li {
@@ -416,6 +429,7 @@ ol {
 
 .header__widget {
 	text-align: right;
+	padding-right: 80px;
 }
 
 .header__widget span {
@@ -428,9 +442,7 @@ ol {
 
 	.header__widget h4 {
 		font-size: 22px;
-		background: linear-gradient(315deg,#72cddd, #ee6faa,#262626);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+		color:white;
 	}
 
 .offcanvas-menu-wrapper {
@@ -1080,9 +1092,7 @@ ol {
 
 .callto__text span {
 	font-size: 16px;
-	background: linear-gradient( -90deg,#72cddd, #ee6faa,#262626);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color:#72cddd ;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -1099,11 +1109,17 @@ ol {
 }
 
 .callto__text .primary-btn {
-	background: linear-gradient( -90deg,#72cddd8a, #ee6faa8c,#262626);
-	-webkit-background-clip: border-box;
+	border: 2px solid white;
 	color: #ffffff;
 	border-radius: 4px;
+	cursor: pointer;
 }
+.callto__text .primary-btn:hover {
+	background-color: white;
+	color: black;
+}
+	
+
 
 .callto__text .primary-btn:before {
 	display: none;
@@ -1498,9 +1514,7 @@ ol {
 
 .breadcrumb__links span {
 	font-size: 15px;
-	background: linear-gradient( 90deg,#72cddd, #ee6faa,#262626);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: white;
 	display: inline-block;
 }
 
@@ -2903,9 +2917,7 @@ ol {
 	}
 	.offcanvas__widget h4 {
 		font-size: 22px;
-		background: linear-gradient( 315deg,#72cddd, #ee6faa,#262626);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+		color:white;
 	}
 	.header__menu {
 		display: none;
